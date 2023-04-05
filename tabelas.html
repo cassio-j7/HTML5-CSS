@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 40%;
+        }
+        table td, table th{
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        table thead{
+            background-color: aquamarine;
+        }
+
+        table tfoot{
+            font-style: italic;
+            background-color: #ddd;
+        }
+
+        table caption{
+            caption-side: top;
+            text-align: center;
+            font-size: 15px;
+            font-style:italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tabelas</h1>
+    <p>As tabelas são feitas da seguinte forma: </p>
+        
+        <ul>
+            <li>Thead: é usado para definir o cabeçalho.</li>
+            <li>Tr ou Th: é usado para definir linhas.</li>
+            <li>Td: é usado para definir colunas.</li>
+            <li>Tfoot: é usado para definir o roda pé.</li>
+        </ul>
+        <hr>
+        <table>
+            <caption>Uma descrição para tabela</caption>
+            <thead>
+                <th>Titulo 1</th>
+                <th>Titulo 2</th>
+                <th>Titulo 3</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Corpo1</td>
+                    <td>Corpo2</td>
+                    <td>Corpo3</td>
+                </tr>
+
+                <tr>
+                    <td>Corpo1</td>
+                    <td>Corpo2</td>
+                    <td>Corpo3</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" 
+                    rowspan="2"><b>Aqui</b></td>
+                    <td>Corpo3</td>
+                </tr>
+           
+                <tr>
+                    
+                    <td>Corpo3</td>
+                </tr>
+
+                <tr>
+                    <td>Corpo1</td>
+                    <td>Corpo2</td>
+                    <td>Corpo3</td>
+                </tr>
+                        
+                <tr>
+                    <td>Corpo1</td>
+                    <td>Corpo2</td>
+                    <td>Corpo3</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>Corpo1</td>
+                    <td>Corpo2</td>
+                    <td>Corpo3</td>
+                </tr>
+            </tfoot>
+        </table>
+    
+</body>
+</html>

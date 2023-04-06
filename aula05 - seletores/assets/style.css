@@ -1,0 +1,26 @@
+/*Seletor all: pega todos os elementos da página*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Para selecionar por Tag, basta utilizar o nome da Tag que deja estilizar.
+ Deve se ter atenção porque quando chamamos um seletor Tag, estamos chamando 
+ todos as tags daquele tipo. Então, o estilo será aplicado a todos.
+*/
+
+div{
+
+}
+
+section{
+
+}
+
+h1{
+
+}
+
+p{
+    color: red;
+}

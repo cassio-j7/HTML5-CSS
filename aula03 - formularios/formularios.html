@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        label{
+            cursor: pointer;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <!--O action recebe o endereço de destino do formulário-->
+    <!-- O target imprimi uma tela brana na página para mostar
+    que o formulario foi enviado-->
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <section>
+            <h1>Cabeçalho</h1>
+            <p>Formulario</p>
+
+            <fieldset>
+                <legend>Descrição</legend>
+
+                <p><label for="nome">Nome: </label>
+                    <input type="text"  id="nome" name="nome" placeholder="Digite seu nome" required>
+                </p>
+                
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="text"  id="email" name="email" placeholder="Digite seu e-mail">
+                </p>
+                
+                <p>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel"  id="telefone" name="telefone" placeholder="Digite seu telefone">
+                </p>
+                
+                <p>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text"  id="cidade" name="cidade" placeholder="Sua cidade">
+                </p>
+               
+                <p>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Reset</button>
+                </p>            
+            </fieldset>
+
+            <fieldset>
+                <legend>Inputs de CheckBox</legend>
+
+                <p>
+                    <label for="">CheckBox</label>
+                    <input type="checkbox" name="" id="dev" value="sim">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Input Radio</legend>
+
+                <p>Gênero: <br>
+                    <label for="">Masculino</label>
+                    <input type="radio" name="genero" id="masculino">
+
+                    <label for="">Feminino</label>
+                    <input type="radio" name="genero" id="feminino">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inputs de Data</legend>
+
+                <p>
+                    <label for="">Data:</label>
+                    <input type="date" name="date" id="date">
+                </p>
+
+                <p>
+                    <label for="">DataTime:</label>
+                    <input type="datetime" name="datetime" id="datetime">
+                </p>
+
+                <p>
+                    <label for="">DataTime-Local:</label>
+                    <input type="datetime-local" name="datetime-local" id="datetime-local">
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Inputs de Cores</legend>
+
+                <p>
+                    <label for="">Data:</label>
+                    <input type="color" name="cor" id="cor" value="#0000">
+                </p>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Inputs de E-mail</legend>
+
+                <p>
+                    <label for="">E-mail:</label>
+                    <input type="email" name="e-mail" id="e-mail">
+                </p>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Inputs de Arquivos</legend>
+
+                <p>
+                    <label for="">Sua foto:</label>
+                    <input type="file" name="file" id="file" accept=".png, .svg, images/*" multiple>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inputs de Numeros</legend>
+
+                <p>
+                    <label for="">Numeros</label>
+                    <input type="number" name="numero" id="number" min="10" max="30" step="2">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inputs de Senhas</legend>
+
+                <p>
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inputs de Range</legend>
+
+                <p>
+                    <label for="password">Range</label>
+                    <input type="range" name="range" id="range" min="0" max="10">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inputs de Range</legend>
+
+                <p>
+                    <label for="password">Range</label>
+                    <input type="range" name="range" id="range" min="0" max="10" list="tickmarks">
+
+                    <datalist id="tickmarks">
+                        <option value="1" label="0%">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5" label="50%#">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10" label="100%">                
+                    </datalist>
+                </p>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Inputs de URL</legend>
+
+                <p>
+                    <label for="url">Sua URL</label>
+                    <input type="url" name="url" id="url">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inputs de Seleção</legend>
+
+                <p>
+                    <label for="url">Selecione um time: </label>
+                    <select name="select" id="select">
+                        <option value="nada" selected>Selecione</option>
+                        <option value="flamengo">flamengo</option>
+                        <option value="santos">Santos</option>
+                        <option value="palmeiras">Palmeiras</option>
+                        <option value="botafogo">Botafogo</option>
+                        <option value="saoPaulo">São Paulo</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inputs de Area de Texto:</legend>
+
+                <p>
+                    <label for="textarea">TextArea: </label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Seu depoimento..."></textarea>
+                </p>
+            </fieldset>
+
+        
+        
+        </section>
+    </form>
+    
+</body>
+</html>

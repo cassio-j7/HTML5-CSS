@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    color: rebeccapurple;
+}
+
+div.main-content h2{
+    font-style: italic;
+}
+
+/*Se chma relaão de herança
+outra forma de chamar este seltor é:
+    .pai.filha - tem que pertencer as duas classes ao mesmo tempo
+    .pai .filha - selecionar a classe filha dentro de uma classe pai
+*/
+
+div{
+    color: initial;
+} 
+
+/*chield selector*/
+.pai > .filho{
+    color: red;
+
+}

@@ -1,0 +1,23 @@
+/*
+
+ID    Classes, Atributos e PseudoClasses    Elementos e PseudoEelmentos
+1       0                                     0
+0       1                                     0
+
+!important - dá prioridade a especificidade. É usada depois de definir a propriedade.
+*/
+
+#p{
+    background-color: red;
+}
+.p{
+    background-color: yellow;
+}
+
+p#p.p{
+    background-color: red; 
+}
+
+#b p#p.p{
+    background-color: purple;
+}

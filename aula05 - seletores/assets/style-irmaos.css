@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ /*Adjacent simbling selector*/
+/* Funcionamento:
+Para um elemento da classe pai, para o primeiro p, para o primeiro h1*/
+.pai h1+p {
+    color: red;
+}
+
+/*General simbling selector*/
+/* Funcionamento:
+Para um elemento da classe pai, para o primeiro h1, para o todo o p*/
+.pai h1~p {
+    color: blue;
+}

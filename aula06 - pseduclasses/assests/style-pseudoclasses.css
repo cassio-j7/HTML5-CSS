@@ -1,0 +1,51 @@
+.heading:hover{
+    background-color: red;
+}
+
+.heading{
+    transition: all 1s ease-in-out
+}
+
+a{
+    color: orange;
+}
+
+/*Geralmente se usa : para pseudoclasses*/
+
+a:link{
+    color: skyblue;
+}
+
+a:visited{
+    color: pink;
+}
+
+a:hover{
+    text-decoration: none;
+    background-color: plum;
+    color: white;
+}
+
+input:focus{
+    box-shadow: 0 0 3px rgba(0, 0, 0, .8);
+}
+
+p:not(.segundo){
+    color: blue;
+}
+
+ul li:nth-child(odd){
+    background-color: rebeccapurple;
+}
+
+ul li:nth-child(even){
+    background-color: darkturquoise;
+}
+
+ul li:nth-child(3n){
+    background-color: orange;
+}
+
+ul li:nth-child(3n + 5){
+    background-color: darkred;
+}

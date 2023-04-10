@@ -21,6 +21,10 @@ h1{
 
 }
 
-p{
+div p{
     color: red;
+}
+
+section p{
+    color: blue;
 }

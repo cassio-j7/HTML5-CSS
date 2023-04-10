@@ -1,0 +1,20 @@
+/*Geralmente se usa :: para pseudoelementos*/
+
+ul li::after{
+    content: ' - ';
+    background-color: red;
+}
+
+p::first-letter{
+    font-size: 50px;
+    font-style: italic;
+}
+
+p::first-line{
+    background-color: magenta;
+}
+
+p::selection{
+    background-color: black;
+    color: white;
+}
